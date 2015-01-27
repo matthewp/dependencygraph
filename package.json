@@ -1,0 +1,22 @@
+{
+  "name": "dependencygraph",
+  "version": "0.0.1",
+  "description": "Get a dependency graph for a SystemJS project",
+  "main": "lib/dependencygraph.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "systemjs",
+    "system",
+    "es6",
+    "modules"
+  ],
+  "dependencies": {
+    "lodash": "^3.0.0",
+    "systemjs": "git://github.com/matthewp/systemjs#clone-build",
+    "traceur": "0.0.82"
+  },
+  "author": "Matthew Phillips",
+  "license": "MIT"
+}
