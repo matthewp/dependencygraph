@@ -1,6 +1,6 @@
 {
   "name": "dependencygraph",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Get a dependency graph for a SystemJS project",
   "main": "lib/dependencygraph.js",
   "scripts": {
@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "lodash": "^3.0.0",
-    "systemjs": "git://github.com/matthewp/systemjs#clone-build",
+    "systemjs": "^0.12.1",
     "traceur": "0.0.82"
   },
   "author": "Matthew Phillips",
