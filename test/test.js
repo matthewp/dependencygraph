@@ -1,15 +1,18 @@
 var assert = require('assert');
+var DependencyGraph = require('../lib/dependencygraph');
 
 describe('dependencyGraph', function() {
-  var dependencyGraph;
 
   beforeEach(function() {
-    dependencyGraph = require("../lib/dependencygraph").withConfig('config');
-    dependencyGraph.baseURL = __dirname + '/tests/basics';
+    this.dependencyGraph = DependencyGraph()
+      .root(__dirname + '/tests/basics')
+      .config('config');
   });
 
   it('basics work', function(done) {
-    dependencyGraph([ 'main' ]).then(function(graph) {
+    var dependencyGraph = this.dependencyGraph;
+
+    dependencyGraph.for([ 'main' ]).then(function(graph) {
       assert(graph.config, 'Config is part of it');
       assert(graph.main, 'Main is part of it');
       assert(graph.bar, 'Bar is part of it');
