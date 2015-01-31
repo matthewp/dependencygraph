@@ -3,14 +3,10 @@ var DependencyGraph = require('../lib/dependencygraph');
 
 describe('dependencyGraph', function() {
 
-  beforeEach(function() {
-    this.dependencyGraph = DependencyGraph()
+  it('basics work', function(done) {
+    var dependencyGraph = DependencyGraph()
       .root(__dirname + '/tests/basics')
       .config('config');
-  });
-
-  it('basics work', function(done) {
-    var dependencyGraph = this.dependencyGraph;
 
     dependencyGraph.for([ 'main' ]).then(function(graph) {
       assert(graph.config, 'Config is part of it');
