@@ -4,7 +4,7 @@
   "description": "Get a dependency graph for a SystemJS project",
   "main": "lib/dependencygraph.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha test/test.js"
   },
   "keywords": [
     "systemjs",
@@ -18,5 +18,8 @@
     "traceur": "0.0.82"
   },
   "author": "Matthew Phillips",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
 }
