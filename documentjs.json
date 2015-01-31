@@ -1,10 +1,6 @@
 {
-  "sites": {
-    "docs": {
-      "glob": {
-        "ignore": ["{node_modules,bower_components}/**/*"],
-      },
-      "parent": "dependencygraph"
-    }
-  }
+  "versions": {
+    "0.0.3": "git://github.com/matthewp/dependencygraph#master"
+  },
+  "defaultVersion": "0.0.3"
 }

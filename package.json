@@ -1,6 +1,6 @@
 {
-  "name": "dependencygraph",
-  "version": "0.0.3",
+  "name": "dependencygraph-docs",
+  "version": "0.0.0",
   "description": "Get a dependency graph for a SystemJS project",
   "main": "lib/dependencygraph.js",
   "scripts": {
@@ -13,13 +13,8 @@
     "modules"
   ],
   "dependencies": {
-    "lodash": "^3.0.0",
-    "systemjs": "^0.12.1",
-    "traceur": "0.0.82"
+    "documentjs": "^0.3.0-pre.0"
   },
   "author": "Matthew Phillips",
-  "license": "MIT",
-  "devDependencies": {
-    "mocha": "^2.1.0"
-  }
+  "license": "MIT"
 }
