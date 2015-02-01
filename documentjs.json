@@ -2,5 +2,13 @@
   "versions": {
     "0.0.3": "git://github.com/matthewp/dependencygraph#master"
   },
-  "defaultVersion": "0.0.3"
+  "defaultVersion": "0.0.3",
+  "sites": {
+    "pages": {
+      "glob": "_pages/*.md",
+      "dest": ".",
+      "forceBuild": true,
+      "pageConfig": {"page":"index"}
+    }
+  }
 }

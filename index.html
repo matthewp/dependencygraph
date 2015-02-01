@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>DependencyGraph - DependencyGraph </title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link rel="stylesheet" type="text/css" href="./static/bundles/static.css">
+	
+	<!--[if lt IE 9]>
+   <script type="text/javascript" src="static/html5shiv.js"></script>
+    <!--<![endif]-->
+</head>
+
+<body class="docs">
+	
+
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+
+		
+
+		
+			
+		
+		
+		
+		
+
+		
+		<section class="comment">
+			<section style="width: 800px; margin:100px auto 20px auto; overflow:hidden;text-align:center;">
+<style>
+  h1 {
+    font-size: 3.5em;
+  }
+</style>
+<h1>DependencyGraph</h1>
+</section>
+<section style="width: 800px; margin:50px auto 20px auto; overflow:hidden;text-align:center;">
+<style>
+  .btn-container {
+    display: inline-block;
+    text-align: left;
+    width: 170px;
+  }
+  .btn {
+    border: 1px solid #d9d9d9;
+    background: #f7f8c3;
+    padding: 10px 20px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+  }
+  .btn:hover {
+    border-color: grey;
+  }
+  .ghb {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+</style>
+<p><span class="btn-container"><a href="docs/" class="btn">Docs</a></span><iframe class="ghb" src="https://ghbtns.com/github-btn.html?user=matthewp&repo=dependencygraph&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe><iframe class="ghb" src="https://ghbtns.com/github-btn.html?user=matthewp&repo=dependencygraph&type=fork&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></p>
+</section>
+<section style="width: 800px; margin:0 auto; overflow:hidden;">
+<h3>Install</h3>
+<p>For use with SystemJS:</p>
+<pre><code class="language-shell">npm install dependencygraph --save
+</code></pre>
+<p>For use with StealJS:</p>
+<pre><code class="language-shell">npm install dependencygraph-steal --save
+</code></pre>
+<h3>Use</h3>
+<p>Creating an instance of <code>DependencyGraph</code> gives you the ability to reuse a set of
+configuration through a common object. Whether using SystemJS or StealJS, the API
+is the exact same.</p>
+<pre><code class="language-js">var DependencyGraph = require('dependencygraph');
+
+var dependencyGraph = DependencyGraph()
+  .root(__dirname + '/app')
+  .config('config');
+
+dependencyGraph.for('main').then(function(graph) {
+  // Do what you need with `graph`
+});
+</code></pre>
+<p>The function which retrieves the dependency graph is <code>dependencyGraph.for</code>. It returns
+a Promise that will resolve with the graph object. The graph object looks like:</p>
+<pre><code class="language-js">{
+  'main': {
+    load: {
+      name: 'main',
+      address: '/path/to/main.js',
+      source: 'module.exports = &quot;bar&quot;;'
+    },
+    deps: ['foo'],
+    dependencies: ['bar']
+  }
+}
+</code></pre>
+<p>Where each key in the object is a module and its value is a node containing <code>load</code>
+(the load object is used in the various hooks of the import process), <code>deps</code> (the
+unnormalized dependencies as declared in the source file) and <code>dependencies</code> (the
+normalized dependencies as resolved; use these if you need to traverse a module's
+dependencies).</p>
+</section>
+
+		</section>
+		
+		
+
+		
+	
+	
+	
+
+
+
+
+
+	
+	
+	<script type="text/javascript">
+		var docObject = {"type":"page","name":"home","src":"_pages/index.md","description":"","title":"DependencyGraph","hideSidebar":true,"hideHeader":true,"hideTitle":true,"hideFooter":true,"hideContainer":true,"hideArticle":true,"comment":" ","glob":{"pattern":"_pages/*.md","ignore":"{node_modules,bower_components}/**/*","cwd":"/Users/matthew/Projects/dependencygraph-docs"},"dest":"/Users/matthew/Projects/dependencygraph-docs","forceBuild":true,"watch":true,"generators":["html"],"page":"index","docConfigDest":"documentjs.json","project":{}};
+	</script>
+	
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript' 
+				data-main="static"
+				data-config="./static/config.js"
+				src="./static/steal.production.js"
+	    		bundles-path="bundles"></script>
+	
+</body>
+
+</html>

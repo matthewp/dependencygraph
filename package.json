@@ -13,7 +13,7 @@
     "modules"
   ],
   "dependencies": {
-    "documentjs": "^0.3.0-pre.0"
+    "documentjs": "git://github.com/bitovi/documentjs#hide-header"
   },
   "author": "Matthew Phillips",
   "license": "MIT"

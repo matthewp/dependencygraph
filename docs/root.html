@@ -17,7 +17,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>dependencygraph - dependencygraph </title>
+	<title>dependencygraph  - root</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
@@ -62,22 +62,46 @@
 		<ul class="api cascading primary-grouping"> 
 	
 		
-		
-			<li class="search-container active">
+		<li class="search-container active parent">
 			<a class="sidebar-title" href="index.html" data-search="dependencygraph">
 				dependencygraph
+			</a>
+		</li>
+		
+		
+			<li class="search-container active">
+			<a class="sidebar-title" href="DependencyGraph.html" data-search="DependencyGraph">
+				DependencyGraph
 			</a>
 			
 	<ul>
 		
 			
 				
+					
+					<li class="heading search-container">
+						<span>prototype</span>
+						
+	<ul>
+		
+			
 				
-				<li class="search-container">
-					<a class="function" href="DependencyGraph.html" data-search="DependencyGraph">
-						DependencyGraph
+				
+				<li class="search-container active">
+					<a class="function" href="root.html" data-search="root">
+						root
 					</a>
 				</li>
+				
+			
+			
+		
+	</ul>
+
+
+					</li>
+					
+				
 				
 			
 			
@@ -100,19 +124,15 @@
 		
 		<section class="title">
 			<div class="heading">
-<h1>dependencygraph</h1>
+<h1>root</h1>
 	<ul class="tags">
-		<li>page</li>
+		<li>function</li>
 	</ul>
 	
 	
 </div>
 
 <div class="sub-heading">
-	
-	
-		<span class="module">docs</span>
-	
 	
 	
 	<span class="inherits">&nbsp;</span>
@@ -139,40 +159,54 @@
 
 		
 		<section class="description">
-			<!--
--->
+			<p>Sets the <code>baseURL</code> used during loading.</p>
 
 		</section>
 		
 
 		
 			
-		
-		
-		
-		
-
-		
-		<section class="comment">
-			<p><a href="https://travis-ci.org/matthewp/dependencygraph"><img src="https://travis-ci.org/matthewp/dependencygraph.svg?branch=master" alt="Build Status" /></a></p>
-<h1>DependencyGraph</h1>
-<p>A module for creating dependency graphs from <a href="https://github.com/systemjs/systemjs">SystemJS</a> and <a href="http://stealjs.com/">StealJS</a> based projects.</p>
-<h2>Install</h2>
-<pre><code class="language-shell">npm install dependencygraph --save
-</code></pre>
-<h2>Use</h2>
-<pre><code class="language-js">var DependencyGraph = require('dependencygraph');
-
-var dependencyGraph = DependencyGraph()
-  .config('path/to/config');
-
-dependencyGraph.for('my/app').then(function(graph) {
-  // graph is an object where each key is a module and contains
-  // the `load` and `dependencies`.
-});
+				<section class="signature">
+					<h2 id="sig_root_baseURL_">root(baseURL)
+</h2>
+<div class="signature-wrapper">
+<pre><code class="language-js">var dependencyGraph = DependencyGraph()
+  .root(__dirname + '/app');
 </code></pre>
 
-		</section>
+
+	<h3>Parameters</h3>
+
+	<ol class="parameters">
+		
+		<li class="parameter">
+			<h4>baseURL
+				<code>{String}</code></h4>
+			<div class="description">
+				<p>Path to the baseURL to use.</p>
+
+			</div>
+			
+			
+			
+		</li>
+		
+	</ol>
+
+
+
+
+
+
+</div>
+
+				</section>
+			
+		
+		
+		
+		
+
 		
 		
 
@@ -198,7 +232,7 @@ dependencyGraph.for('my/app').then(function(graph) {
 	
 	
 	<script type="text/javascript">
-		var docObject = {"type":"page","name":"docs","src":"README.md","description":"<!--\n-->","title":"dependencygraph","glob":{"ignore":["{node_modules,bower_components}/**/*"],"pattern":"**/*.{md,js}","cwd":"/Users/matthew/Projects/dependencygraph"},"dest":"/Users/matthew/Projects/dependencygraph-docs/docs","generators":["html"],"docConfigDest":"../documentjs.json","project":{"version":"0.0.3","name":"dependencygraph","source":"git://github.com/matthewp/dependencygraph#master"}};
+		var docObject = {"type":"function","name":"root","src":"docs/root.md","description":"Sets the `baseURL` used during loading.","title":"","parent":"DependencyGraph.instance","signatures":[{"code":"root(baseURL)","description":"```js\nvar dependencyGraph = DependencyGraph()\n  .root(__dirname + '/app');\n```","params":[{"types":[{"type":"String"}],"name":"baseURL","description":"Path to the baseURL to use."}]}],"glob":{"ignore":["{node_modules,bower_components}/**/*"],"pattern":"**/*.{md,js}","cwd":"/Users/matthew/Projects/dependencygraph"},"dest":"/Users/matthew/Projects/dependencygraph-docs/docs","generators":["html"],"docConfigDest":"../documentjs.json","project":{"version":"0.0.3","name":"dependencygraph","source":"git://github.com/matthewp/dependencygraph#master"}};
 	</script>
 	
 	
