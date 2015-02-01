@@ -2,7 +2,6 @@
 @hide sidebar
 @hide header
 @hide title
-@hide footer
 @hide container
 @hide article
 @body
@@ -11,6 +10,9 @@
 <style>
   h1 {
     font-size: 3.5em;
+  }
+  footer .brand {
+    display: none;
   }
 </style>
 
@@ -102,5 +104,9 @@ Where each key in the object is a module and its value is a node containing `loa
 unnormalized dependencies as declared in the source file) and `dependencies` (the
 normalized dependencies as resolved; use these if you need to traverse a module's
 dependencies).
+
+### Credits
+
+DependencyGraph is a fork of the module [steal-tools](https://github.com/bitovi/steal-tools/blob/master/lib/graph/make_graph.js) uses to get [the graph](https://github.com/bitovi/steal-tools/blob/master/lib/graph/make_graph.js) during it's build process. If you're looking to build a Steal project, steal-tools is the best way.
 
 </section>

@@ -58,6 +58,9 @@
   h1 {
     font-size: 3.5em;
   }
+  footer .brand {
+    display: none;
+  }
 </style>
 <h1>DependencyGraph</h1>
 </section>
@@ -127,6 +130,8 @@ a Promise that will resolve with the graph object. The graph object looks like:<
 unnormalized dependencies as declared in the source file) and <code>dependencies</code> (the
 normalized dependencies as resolved; use these if you need to traverse a module's
 dependencies).</p>
+<h3>Credits</h3>
+<p>DependencyGraph is a fork of the module <a href="https://github.com/bitovi/steal-tools/blob/master/lib/graph/make_graph.js">steal-tools</a> uses to get <a href="https://github.com/bitovi/steal-tools/blob/master/lib/graph/make_graph.js">the graph</a> during it's build process. If you're looking to build a Steal project, steal-tools is the best way.</p>
 </section>
 
 		</section>
@@ -143,9 +148,15 @@ dependencies).</p>
 
 
 	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
 	
 	<script type="text/javascript">
-		var docObject = {"type":"page","name":"home","src":"_pages/index.md","description":"","title":"DependencyGraph","hideSidebar":true,"hideHeader":true,"hideTitle":true,"hideFooter":true,"hideContainer":true,"hideArticle":true,"comment":" ","glob":{"pattern":"_pages/*.md","ignore":"{node_modules,bower_components}/**/*","cwd":"/Users/matthew/Projects/dependencygraph-docs"},"dest":"/Users/matthew/Projects/dependencygraph-docs","forceBuild":true,"watch":true,"generators":["html"],"page":"index","docConfigDest":"documentjs.json","project":{}};
+		var docObject = {"type":"page","name":"home","src":"_pages/index.md","description":"","title":"DependencyGraph","hideSidebar":true,"hideHeader":true,"hideTitle":true,"hideContainer":true,"hideArticle":true,"comment":" ","glob":{"pattern":"_pages/*.md","ignore":"{node_modules,bower_components}/**/*","cwd":"/Users/matthew/Projects/dependencygraph-docs"},"dest":"/Users/matthew/Projects/dependencygraph-docs","forceBuild":true,"watch":true,"generators":["html"],"page":"index","docConfigDest":"documentjs.json","project":{}};
 	</script>
 	
 	
