@@ -17,7 +17,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>dependencygraph  - root</title>
+	<title>dependencygraph  - for</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
@@ -101,7 +101,7 @@
 			
 				
 				
-				<li class="search-container">
+				<li class="search-container active">
 					<a class="function" href="for.html" data-search="for">
 						for
 					</a>
@@ -113,7 +113,7 @@
 			
 				
 				
-				<li class="search-container active">
+				<li class="search-container">
 					<a class="function" href="root.html" data-search="root">
 						root
 					</a>
@@ -150,7 +150,7 @@
 		
 		<section class="title">
 			<div class="heading">
-<h1>root</h1>
+<h1>for</h1>
 	<ul class="tags">
 		<li>function</li>
 	</ul>
@@ -185,7 +185,7 @@
 
 		
 		<section class="description">
-			<p>Sets the <code>baseURL</code> used during loading.</p>
+			<p>Retrieve the dependency graph object for a given set of modules.</p>
 
 		</section>
 		
@@ -193,12 +193,9 @@
 		
 			
 				<section class="signature">
-					<h2 id="sig_root_baseURL_">root(baseURL)
+					<h2 id="sig_for__modules_____">for([modules...])
 </h2>
 <div class="signature-wrapper">
-<pre><code class="language-js">var dependencyGraph = DependencyGraph()
-  .root(__dirname + '/app');
-</code></pre>
 
 
 	<h3>Parameters</h3>
@@ -206,12 +203,16 @@
 	<ol class="parameters">
 		
 		<li class="parameter">
-			<h4>baseURL
-				<code>{String}</code></h4>
+			<h4>modules
+				<code>{String | Array&lt;String&gt;}</code></h4>
 			<div class="description">
-				<p>Path to the baseURL to use.</p>
+				<p>The modules to retrieve using the configuration
+created through <a href="root.html">root</a>, <a href="config.html">config</a>, and others. Whether 1 module or 10 modules (or more)
+are provided, all are combined into a single graph object.</p>
 
 			</div>
+			
+			
 			
 			
 			
@@ -222,9 +223,9 @@
 
 	<h3>Returns</h3>
 	<div class="returns">
-		<h4><code>{<a href="DependencyGraph.html" >DependencyGraph</a>}</code></h4>
+		<h4><code>{Promise&lt;Object&gt;}</code></h4>
 		<div class="description">
-			<p>Returns the instance of DependencyGraph, for chaining.</p>
+			<p>A Promise that will resolve with a graph object.</p>
 
 		</div>
 		
@@ -270,7 +271,7 @@
 	
 	
 	<script type="text/javascript">
-		var docObject = {"type":"function","name":"root","src":"docs/root.md","description":"Sets the `baseURL` used during loading.","title":"","parent":"DependencyGraph.instance","signatures":[{"code":"root(baseURL)","description":"```js\nvar dependencyGraph = DependencyGraph()\n  .root(__dirname + '/app');\n```","params":[{"types":[{"type":"String"}],"name":"baseURL","description":"Path to the baseURL to use."}],"returns":{"types":[{"type":"DependencyGraph"}],"description":"Returns the instance of DependencyGraph, for chaining."}}],"glob":{"ignore":["{node_modules,bower_components}/**/*"],"pattern":"**/*.{md,js}","cwd":"/Users/matthew/Projects/dependencygraph"},"dest":"/Users/matthew/Projects/dependencygraph-docs/docs","generators":["html"],"docConfigDest":"../documentjs.json","project":{"version":"0.0.4","name":"dependencygraph","source":"git://github.com/matthewp/dependencygraph#v0.0.4"}};
+		var docObject = {"type":"function","name":"for","src":"docs/for.md","description":"Retrieve the dependency graph object for a given set of modules.","title":"","parent":"DependencyGraph.instance","signatures":[{"code":"for([modules...])","description":"","params":[{"types":[{"type":"String"},{"type":"Array","template":[{"types":[{"type":"String"}]}]}],"name":"modules","description":"The modules to retrieve using the configuration\ncreated through [root], [config], and others. Whether 1 module or 10 modules (or more)\nare provided, all are combined into a single graph object."}],"returns":{"types":[{"type":"Promise","template":[{"types":[{"type":"Object","options":[]}]}]}],"description":"A Promise that will resolve with a graph object."}}],"glob":{"ignore":["{node_modules,bower_components}/**/*"],"pattern":"**/*.{md,js}","cwd":"/Users/matthew/Projects/dependencygraph"},"dest":"/Users/matthew/Projects/dependencygraph-docs/docs","generators":["html"],"docConfigDest":"../documentjs.json","project":{"version":"0.0.4","name":"dependencygraph","source":"git://github.com/matthewp/dependencygraph#v0.0.4"}};
 	</script>
 	
 	

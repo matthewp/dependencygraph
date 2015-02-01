@@ -17,7 +17,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>dependencygraph  - root</title>
+	<title>dependencygraph  - config</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
@@ -89,7 +89,7 @@
 			
 				
 				
-				<li class="search-container">
+				<li class="search-container active">
 					<a class="function" href="config.html" data-search="config">
 						config
 					</a>
@@ -113,7 +113,7 @@
 			
 				
 				
-				<li class="search-container active">
+				<li class="search-container">
 					<a class="function" href="root.html" data-search="root">
 						root
 					</a>
@@ -150,7 +150,7 @@
 		
 		<section class="title">
 			<div class="heading">
-<h1>root</h1>
+<h1>config</h1>
 	<ul class="tags">
 		<li>function</li>
 	</ul>
@@ -185,7 +185,8 @@
 
 		
 		<section class="description">
-			<p>Sets the <code>baseURL</code> used during loading.</p>
+			<p>Appends a configuration file to be executed before loading any module with <a href="for.html">for</a>. Configuration files are an important part of client-side loaders
+because they provide information needed to load a module such as its path.</p>
 
 		</section>
 		
@@ -193,31 +194,15 @@
 		
 			
 				<section class="signature">
-					<h2 id="sig_root_baseURL_">root(baseURL)
+					<h2 id="sig_config_configFile_">config(configFile)
 </h2>
 <div class="signature-wrapper">
 <pre><code class="language-js">var dependencyGraph = DependencyGraph()
-  .root(__dirname + '/app');
+  .config('myconfig');
 </code></pre>
+<p>In the above example <code>myconfig</code> is a configuration file located at <code>myconfig.js</code> relative
+to the <code>baseURL</code>. If you need to adjust the baseURL use <a href="root.html">root</a>.</p>
 
-
-	<h3>Parameters</h3>
-
-	<ol class="parameters">
-		
-		<li class="parameter">
-			<h4>baseURL
-				<code>{String}</code></h4>
-			<div class="description">
-				<p>Path to the baseURL to use.</p>
-
-			</div>
-			
-			
-			
-		</li>
-		
-	</ol>
 
 
 	<h3>Returns</h3>
@@ -270,7 +255,7 @@
 	
 	
 	<script type="text/javascript">
-		var docObject = {"type":"function","name":"root","src":"docs/root.md","description":"Sets the `baseURL` used during loading.","title":"","parent":"DependencyGraph.instance","signatures":[{"code":"root(baseURL)","description":"```js\nvar dependencyGraph = DependencyGraph()\n  .root(__dirname + '/app');\n```","params":[{"types":[{"type":"String"}],"name":"baseURL","description":"Path to the baseURL to use."}],"returns":{"types":[{"type":"DependencyGraph"}],"description":"Returns the instance of DependencyGraph, for chaining."}}],"glob":{"ignore":["{node_modules,bower_components}/**/*"],"pattern":"**/*.{md,js}","cwd":"/Users/matthew/Projects/dependencygraph"},"dest":"/Users/matthew/Projects/dependencygraph-docs/docs","generators":["html"],"docConfigDest":"../documentjs.json","project":{"version":"0.0.4","name":"dependencygraph","source":"git://github.com/matthewp/dependencygraph#v0.0.4"}};
+		var docObject = {"type":"function","name":"config","src":"docs/config.md","description":"Appends a configuration file to be executed before loading any module with [for]. Configuration files are an important part of client-side loaders\nbecause they provide information needed to load a module such as its path.","title":"","parent":"DependencyGraph.instance","signatures":[{"code":"config(configFile)","description":"```js\nvar dependencyGraph = DependencyGraph()\n  .config('myconfig');\n```\n\nIn the above example `myconfig` is a configuration file located at `myconfig.js` relative\nto the `baseURL`. If you need to adjust the baseURL use [root].","params":[],"returns":{"types":[{"type":"DependencyGraph"}],"description":"Returns the instance of DependencyGraph, for chaining."}}],"glob":{"ignore":["{node_modules,bower_components}/**/*"],"pattern":"**/*.{md,js}","cwd":"/Users/matthew/Projects/dependencygraph"},"dest":"/Users/matthew/Projects/dependencygraph-docs/docs","generators":["html"],"docConfigDest":"../documentjs.json","project":{"version":"0.0.4","name":"dependencygraph","source":"git://github.com/matthewp/dependencygraph#v0.0.4"}};
 	</script>
 	
 	

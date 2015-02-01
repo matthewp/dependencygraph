@@ -1,8 +1,8 @@
 {
   "versions": {
-    "0.0.3": "git://github.com/matthewp/dependencygraph#master"
+    "0.0.4": "git://github.com/matthewp/dependencygraph#v0.0.4"
   },
-  "defaultVersion": "0.0.3",
+  "defaultVersion": "0.0.4",
   "sites": {
     "pages": {
       "glob": "_pages/*.md",
