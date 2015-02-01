@@ -1,3 +1,7 @@
+<!--
+@page docs dependencygraph
+-->
+
 [![Build Status](https://travis-ci.org/matthewp/dependencygraph.svg?branch=master)](https://travis-ci.org/matthewp/dependencygraph)
 
 # DependencyGraph
